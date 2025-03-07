@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-// Styled Navbar Container
+
 const Navbar = styled.nav`
   background-color: #2c3e50;
   padding: 15px 20px;
@@ -10,28 +10,28 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: nowrap; /* Prevents items from wrapping */
+  flex-wrap: nowrap; 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
 `;
 
-// Mobile Menu Button (Hamburger)
+
 const MenuButton = styled.button`
   background: none;
   border: none;
   color: white;
   font-size: 24px;
   cursor: pointer;
-  display: none; /* Hidden on desktop */
+  display: none; 
 
   @media (max-width: 768px) {
-    display: block; /* Show only on mobile */
+    display: block; 
   }
 `;
 
-// Navigation List
+
 const NavList = styled.ul<{ isOpen: boolean }>`
   list-style: none;
   padding: 0;
@@ -48,7 +48,7 @@ const NavList = styled.ul<{ isOpen: boolean }>`
     width: 100%;
     background-color: #2c3e50;
     padding: 10px 0;
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")}; /* Show when open */
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")}; 
   }
 `;
 
