@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
-const FooterContainer = styled.footer`
-    background-color: white;
-    padding: 10px;
+const Container = styled.main`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px); 
+    width: 100vw; 
+    max-width: 100%; 
+    padding: 20px;
     text-align: center;
-    width: 100%;
+    margin: 0 auto; 
 `;
+
 
 export default function Footer() {
     return (
-        <FooterContainer>
+        <Container>
             <p>© 2024 My React Resume | <a href="#">Credits</a></p>
-        </FooterContainer>
+        </Container>
     );
 }
+
