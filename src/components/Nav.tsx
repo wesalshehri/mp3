@@ -10,12 +10,13 @@ const Navbar = styled.nav`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     position: fixed;
-    top: 0;
+    top: 60px; /* Push it down below the header */
     left: 0;
-    z-index: 1000;
+    z-index: 900; /* Lower than the header */
 `;
+
 
 
 const MenuButton = styled.button`
@@ -82,9 +83,11 @@ export default function Nav() {
                 <NavItem><NavLink to="/experience" onClick={() => setMenuOpen(false)}>Experience</NavLink></NavItem>
                 <NavItem><NavLink to="/certifications" onClick={() => setMenuOpen(false)}>Certifications</NavLink></NavItem>
                 <NavItem><NavLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</NavLink></NavItem>
+                <NavItem><NavLink to="/skills" onClick={() => setMenuOpen(false)}>Skills</NavLink></NavItem>
                 <NavItem><NavLink to="/references" onClick={() => setMenuOpen(false)}>References</NavLink></NavItem>
-                <NavItem><NavLink to="/calculator" onClick={() => setMenuOpen(false)}>Calculator</NavLink></NavItem>
             </NavList>
         </Navbar>
     );
 }
+
+
