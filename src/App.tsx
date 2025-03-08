@@ -13,8 +13,8 @@ import Skills from "./pages/Skills.tsx";
 function Root() {
     return (
         <div>
-            <Nav />
             <Header />
+            <Nav />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/education" element={<Education />} />
